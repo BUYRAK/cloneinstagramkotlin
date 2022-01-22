@@ -14,7 +14,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Instagram">
         <activity
-            android:name=".HomeActivity"
+            android:name=".Store.StoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Search.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Reels.ReelsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Home.HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
