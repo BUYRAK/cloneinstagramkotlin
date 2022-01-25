@@ -2,9 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_constraint_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Profile.ProfileActivity">
+    tools:context=".Profile.ProfileActivity"
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/textView6"
@@ -69,7 +71,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgProfileMore"
         android:layout_width="37dp"
         android:layout_height="31dp"
         android:layout_marginTop="16dp"
@@ -87,7 +89,7 @@
         android:layout_height="31dp"
         android:layout_marginTop="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/imgProfileMore"
         app:layout_constraintHorizontal_bias="0.92"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent"
@@ -129,7 +131,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_edit_profile"
         android:layout_width="378dp"
         android:layout_height="50dp"
         android:layout_marginTop="72dp"
@@ -178,5 +180,20 @@
         app:itemBackground="@android:color/white">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/profile_more_menu"
+        android:layout_width="0dp"
+        android:layout_height="303dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/round_corner"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_edit_profile"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/user_settings_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
